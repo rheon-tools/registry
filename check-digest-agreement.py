@@ -13,7 +13,7 @@
 
     ./check-digest-agreement.py            食い違えば非ゼロ
 
-⚠️ flux が手元に無ければ**測れない**と名乗って落ちる（緑にしない）。
+⚠️ rheon が手元に無ければ**測れない**と名乗って落ちる（緑にしない）。
 """
 import json
 import os
@@ -63,16 +63,15 @@ def _host_platforms() -> tuple[str, ...]:
 _PLATFORM_ORDER = _host_platforms()
 
 
-def _runnable_flux() -> str | None:
-    """リポの中の `flux` を、**この台の面**から選ぶ。無ければ PATH に落ちる。
+def _runnable_rheon() -> str | None:
+    """リポの中の `rheon` を、**この台の面**から選ぶ。無ければ PATH に落ちる。
 
     ⭐ 実際に `--version` を撃って**走ることまで**確かめる —— 📏 ファイルが在って
     実行ビットが立っているのに `exec` が落ちる、が現に起きた形なので、
     「在る」で満足しない。
     """
-    # 🚚 パッケージマネージャは `rheon` に改名した（flux-tools #48）。`rheon/` を先に、旧名の `flux/` は
-    #    移行の間の保険（同じ実体を置いている）。
-    for name in ("rheon", "flux"):
+    # 🚚 旧名 `flux/` の橋は外した（flux の名を取り払っている）。
+    for name in ("rheon",):
         for platform_dir in _PLATFORM_ORDER:
             exe = f"{name}.exe" if platform_dir.startswith("windows") else name
             cand = ROOT / name / platform_dir / exe
@@ -84,16 +83,16 @@ def _runnable_flux() -> str | None:
                 continue  # 🚨 面が違う（Exec format error）—— ここで握るのが目的
             if r.returncode == 0:
                 return str(cand)
-    return shutil.which("rheon") or shutil.which("flux")
+    return shutil.which("rheon")
 
 
 def main() -> int:
     # ⭐ **配ろうとしている実体そのもの**を使う（棚に在る物ではなく）——
-    # 検査したいのは「この回に publish される flux が、この回のカタログと一致するか」。
-    # ⚠️ CI には flux が入っていないが、**リポの中に在る**ので依存は増えない。
+    # 検査したいのは「この回に publish される rheon が、この回のカタログと一致するか」。
+    # ⚠️ CI には rheon が入っていないが、**リポの中に在る**ので依存は増えない。
     #
     # 🚨 **ただし「このマシンで走る面」を選ぶこと**（macOS から撃って踏んだ）。
-    # 長く `flux/linux-x86_64/flux` を決め打ちしていた。⭐ CI（linux）では当たるが、
+    # 長く `rheon/linux-x86_64/rheon` を決め打ちしていた。⭐ CI（linux）では当たるが、
     # 📏 macOS から撃つと `OSError: Exec format error` の**生の traceback** で落ちる ——
     # 🚨 「指紋が食い違った」ではなく「**ここでは測れない**」なのに、そう読めない形で。
     # ⚠️ このリポの `check-artifacts.py` は自分の doc で「測らなかったときに緑を返さない」と
@@ -101,13 +100,13 @@ def main() -> int:
     #
     # ⭐⭐ 面は**どれでもよい** —— 見たいのは指紋の計算が python と rust で一致するかで、
     # それは面に依らない。∴ **走る物を選ぶ**のが正しく、linux に固執する理由は無い。
-    flux = _runnable_flux()
-    if not flux:
-        print("flux を**この台で走る形では**見つけられません"
+    rheon = _runnable_rheon()
+    if not rheon:
+        print("rheon を**この台で走る形では**見つけられません"
               f"（試した面: {', '.join(_PLATFORM_ORDER)} ／ PATH）——\n"
               "一致するのではなく、**測れていません**。", file=sys.stderr)
         return 1
-    print(f"  使う flux: {flux}")
+    print(f"  使う rheon: {rheon}")
 
     # 🚨 **まず両側を公開ベクタに突き合わせる。** 「相手と一致していればよい」だと、
     # **2 実装が同じように間違ったとき**に気づけない（実際、素数を 1 桁多く書いて
@@ -118,7 +117,7 @@ def main() -> int:
         with tempfile.NamedTemporaryFile("wb", delete=False, suffix=".json") as f:
             f.write(text.encode())
             tmp = f.name
-        theirs = subprocess.run([flux, "digest", tmp], capture_output=True, text=True).stdout.strip()
+        theirs = subprocess.run([rheon, "digest", tmp], capture_output=True, text=True).stdout.strip()
         pathlib.Path(tmp).unlink(missing_ok=True)
         if mine != want or theirs != want:
             print(f"🔴 FNV-1a の既知の値と違います（{text!r}）: "
@@ -126,7 +125,7 @@ def main() -> int:
             return 1
     print(f"✅ 両側とも FNV-1a の既知の値 {len(FNV1A_64_VECTORS)} 件と一致")
 
-    # ⭐ Rust 側の答えは `flux` に出させる（隠しコマンド。人向けの面ではない）。
+    # ⭐ Rust 側の答えは `rheon` に出させる（隠しコマンド。人向けの面ではない）。
     checked = 0
     bad: list[str] = []
     for d in pipe_dirs(ROOT):
@@ -135,9 +134,9 @@ def main() -> int:
             continue
         raw = m.read_bytes()
         mine = manifest_digest(raw)
-        r = subprocess.run([flux, "digest", str(m)], capture_output=True, text=True)
+        r = subprocess.run([rheon, "digest", str(m)], capture_output=True, text=True)
         if r.returncode != 0:
-            bad.append(f"{d.name}: flux が答えませんでした（{r.stderr.strip()[:80]}）")
+            bad.append(f"{d.name}: rheon が答えませんでした（{r.stderr.strip()[:80]}）")
             continue
         theirs = r.stdout.strip()
         checked += 1

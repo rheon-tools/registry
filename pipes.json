@@ -30,32 +30,6 @@
       "manifest_digest": "7d15fbaa013c6944"
     },
     {
-      "id": "flux",
-      "name": "flux",
-      "version": "0.5.1",
-      "description": "Renamed to rheon: run `flux install rheon`.",
-      "author": "takakix2",
-      "bin_name": "flux",
-      "runtime": "binary",
-      "usage": "flux install flux-eye",
-      "license": "MIT",
-      "tags": [
-        "manager",
-        "official"
-      ],
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "418a0a82c",
-        "windows-x86_64": "418a0a82c",
-        "macos-aarch64": "418a0a82c"
-      },
-      "manifest_digest": "8e6e78f56151591c"
-    },
-    {
       "id": "json-to-table",
       "name": "json-to-table",
       "version": "0.3.0",
@@ -525,7 +499,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "890f261169137e69"
+      "manifest_digest": "4a5fcaf7571cefa8"
     },
     {
       "id": "rheon-sum",
