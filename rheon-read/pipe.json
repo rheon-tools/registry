@@ -5,7 +5,7 @@
   "bin_name": "rheon-read",
   "version": "3.4.1",
   "description": "Token-budgeted reader for a path or the files upstream records name.",
-  "notes": "Token-budgeted file reader. Reads a path, or the files named by upstream Flux records, and streams their contents as Flux NDJSON.",
+  "notes": "Token-budgeted file reader. Reads a path, or the files named by upstream Rheon records, and streams their contents as Rheon NDJSON.",
   "runtime": "binary",
   "side_effects": [],
   "replaces": [

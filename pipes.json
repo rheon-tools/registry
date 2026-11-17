@@ -5,7 +5,7 @@
       "id": "filter-json",
       "name": "filter-json",
       "version": "0.3.2",
-      "description": "Keeps Flux records by type or field and projects the fields you want.",
+      "description": "Keeps Rheon records by type or field and projects the fields you want.",
       "author": "takakix2",
       "bin_name": "filter-json",
       "runtime": "binary",
@@ -27,7 +27,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "7d15fbaa013c6944"
+      "manifest_digest": "4cd84a393b7ed5be"
     },
     {
       "id": "json-to-table",
@@ -65,7 +65,7 @@
       "author": "takakix2",
       "bin_name": "rheon",
       "runtime": "binary",
-      "usage": "flux install flux-eye",
+      "usage": "rheon install rheon-eye",
       "license": "MIT",
       "tags": [
         "manager",
@@ -81,13 +81,13 @@
         "windows-x86_64": "418a0a82c",
         "macos-aarch64": "418a0a82c"
       },
-      "manifest_digest": "fe0b1c5dcfc81a58"
+      "manifest_digest": "d6b21c08ed835ce0"
     },
     {
       "id": "rheon-count",
       "name": "rheon-count",
       "version": "1.0.0",
-      "description": "Counts Flux records per value of one field -- uniq -c for records.",
+      "description": "Counts Rheon records per value of one field -- uniq -c for records.",
       "bin_name": "rheon-count",
       "runtime": "binary",
       "usage": "rheon-grep TODO src --limit 0 | rheon-count --by path",
@@ -104,7 +104,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "50bb49a1729a0678"
+      "manifest_digest": "54c31fd1fdd96c80"
     },
     {
       "id": "rheon-du",
@@ -166,13 +166,13 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "d72b72560846445e"
+      "manifest_digest": "171ef6a112b31234"
     },
     {
       "id": "rheon-eye",
       "name": "rheon-eye",
       "version": "0.2.3",
-      "description": "High-speed filesystem scanner. Streams directory structure as Flux NDJSON.",
+      "description": "High-speed filesystem scanner. Streams directory structure as Rheon NDJSON.",
       "author": "takakix2",
       "bin_name": "rheon-eye",
       "runtime": "binary",
@@ -195,13 +195,13 @@
         "linux-x86_64": "9d24ae99d",
         "windows-x86_64": "9d24ae99d"
       },
-      "manifest_digest": "0993678ec8791b28"
+      "manifest_digest": "4530593863c30e05"
     },
     {
       "id": "rheon-find",
       "name": "rheon-find",
       "version": "1.1.2",
-      "description": "Fuzzy filename finder. Streams matches as Flux NDJSON.",
+      "description": "Fuzzy filename finder. Streams matches as Rheon NDJSON.",
       "bin_name": "rheon-find",
       "runtime": "binary",
       "usage": "rheon-find \"query\" /path --limit 50",
@@ -216,7 +216,7 @@
         "linux-x86_64": "9d24ae99d",
         "windows-x86_64": "9d24ae99d"
       },
-      "manifest_digest": "404e0b6c64bc3f3c"
+      "manifest_digest": "5667204564e8cba9"
     },
     {
       "id": "rheon-grep",
@@ -251,7 +251,7 @@
       "id": "rheon-head",
       "name": "rheon-head",
       "version": "1.0.1",
-      "description": "The first N Flux records -- head for records, keeping the terminator rule.",
+      "description": "The first N Rheon records -- head for records, keeping the terminator rule.",
       "bin_name": "rheon-head",
       "runtime": "binary",
       "usage": "rheon-du | rheon-sort --by disk --desc | rheon-head -n 5",
@@ -266,7 +266,7 @@
         "linux-x86_64": "9d24ae99d",
         "windows-x86_64": "9d24ae99d"
       },
-      "manifest_digest": "800e727c5959f7f1"
+      "manifest_digest": "0511888cbf7d0e87"
     },
     {
       "id": "rheon-id",
@@ -297,7 +297,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "2663cf2784353131"
+      "manifest_digest": "1abb2f8e38ef43bc"
     },
     {
       "id": "rheon-ls",
@@ -328,7 +328,7 @@
         "windows-x86_64": "a62f2e54e",
         "macos-aarch64": "a62f2e54e"
       },
-      "manifest_digest": "e85ef3c8d5e008ba"
+      "manifest_digest": "2b42add4a93f5c16"
     },
     {
       "id": "rheon-priority",
@@ -351,7 +351,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "c0288234e84e8583"
+      "manifest_digest": "3d2eb4915ac53fe4"
     },
     {
       "id": "rheon-proc",
@@ -382,7 +382,7 @@
         "windows-x86_64": "8275462d3",
         "macos-aarch64": "8275462d3"
       },
-      "manifest_digest": "1a07510529bbd79c"
+      "manifest_digest": "4ba08fb7423a4aba"
     },
     {
       "id": "rheon-read",
@@ -405,13 +405,13 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "9d39856fb83bde8d"
+      "manifest_digest": "53540ea9088981bd"
     },
     {
       "id": "rheon-render",
       "name": "rheon-render",
       "version": "0.4.1",
-      "description": "Converts Flux NDJSON to and from JSON, Markdown, CSV and YAML.",
+      "description": "Converts Rheon NDJSON to and from JSON, Markdown, CSV and YAML.",
       "author": "takakix2",
       "bin_name": "rheon-render",
       "runtime": "binary",
@@ -438,7 +438,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "4288da66e31f7a0f"
+      "manifest_digest": "4ea0ed067fb2edab"
     },
     {
       "id": "rheon-replace",
@@ -474,7 +474,7 @@
       "id": "rheon-sort",
       "name": "rheon-sort",
       "version": "1.0.0",
-      "description": "Sorts Flux records by the value of one field -- sort -n for records.",
+      "description": "Sorts Rheon records by the value of one field -- sort -n for records.",
       "bin_name": "rheon-sort",
       "runtime": "binary",
       "usage": "rheon-du | rheon-sort --by disk --desc",
@@ -491,13 +491,13 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "4a5fcaf7571cefa8"
+      "manifest_digest": "999bb894b6561996"
     },
     {
       "id": "rheon-sum",
       "name": "rheon-sum",
       "version": "1.0.0",
-      "description": "File digests as Flux records -- sha256sum / md5sum for records.",
+      "description": "File digests as Rheon records -- sha256sum / md5sum for records.",
       "bin_name": "rheon-sum",
       "runtime": "binary",
       "usage": "git ls-files | sig | rheon-sum",
@@ -514,13 +514,13 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "2c2fe7903614b05d"
+      "manifest_digest": "c37ee62e44c89862"
     },
     {
       "id": "rheon-tail",
       "name": "rheon-tail",
       "version": "1.0.0",
-      "description": "The last N Flux records -- tail for records, terminator not counted.",
+      "description": "The last N Rheon records -- tail for records, terminator not counted.",
       "bin_name": "rheon-tail",
       "runtime": "binary",
       "usage": "journal --since 1h | rheon-tail -n 20",
@@ -537,13 +537,13 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "e9644900349c1871"
+      "manifest_digest": "af21fb217c0a1351"
     },
     {
       "id": "rheon-time",
       "name": "rheon-time",
       "version": "1.1.0",
-      "description": "The current time as one Flux record -- date for records, zone included.",
+      "description": "The current time as one Rheon record -- date for records, zone included.",
       "bin_name": "rheon-time",
       "runtime": "binary",
       "usage": "rheon-time",
@@ -560,7 +560,7 @@
         "windows-x86_64": "8275462d3",
         "macos-aarch64": "8275462d3"
       },
-      "manifest_digest": "93769a0285793f9d"
+      "manifest_digest": "40932a3e7df9fb43"
     },
     {
       "id": "rheon-wc",
@@ -592,7 +592,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "361839093a7d6063"
+      "manifest_digest": "0c26323faa245412"
     },
     {
       "id": "rheon-write",
@@ -615,7 +615,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "06efad06f8aa0630"
+      "manifest_digest": "21a0087af09f2c07"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "name": "rheon-find",
   "bin_name": "rheon-find",
   "version": "1.1.2",
-  "description": "Fuzzy filename finder. Streams matches as Flux NDJSON.",
+  "description": "Fuzzy filename finder. Streams matches as Rheon NDJSON.",
   "runtime": "binary",
   "side_effects": [],
   "replaces": [
