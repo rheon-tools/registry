@@ -163,7 +163,7 @@
     {
       "id": "rheon-eye",
       "name": "rheon-eye",
-      "version": "0.2.4",
+      "version": "0.3.0",
       "description": "High-speed filesystem scanner. Streams directory structure as Rheon NDJSON.",
       "author": "takakix2",
       "bin_name": "rheon-eye",
@@ -184,10 +184,10 @@
         "flux-eye"
       ],
       "build_ids": {
-        "linux-x86_64": "1311bf3f0",
-        "windows-x86_64": "1311bf3f0"
+        "linux-x86_64": "4456e6e4c",
+        "windows-x86_64": "4456e6e4c"
       },
-      "manifest_digest": "dd4cc87c7b1b786a"
+      "manifest_digest": "de59725eee78ea79"
     },
     {
       "id": "rheon-find",
