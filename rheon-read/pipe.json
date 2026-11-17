@@ -3,7 +3,7 @@
   "id": "rheon-read",
   "name": "rheon-read",
   "bin_name": "rheon-read",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "description": "Token-budgeted reader for a path or the files upstream records name.",
   "notes": "Token-budgeted file reader. Reads a path, or the files named by upstream Rheon records, and streams their contents as Rheon NDJSON.",
   "runtime": "binary",
@@ -58,7 +58,6 @@
   "usage": "rheon-read /path/to/file --budget 2000   |   rheon-eye . --detail | rheon-read",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64",
-    "macos-aarch64"
+    "windows-x86_64"
   ]
 }

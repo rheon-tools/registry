@@ -3,7 +3,7 @@
   "id": "rheon-eye",
   "name": "rheon-eye",
   "bin_name": "rheon-eye",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "High-speed filesystem scanner. Streams directory structure as Rheon NDJSON.",
   "usage": "rheon-eye ~/project --detail",
   "author": "takakix2",

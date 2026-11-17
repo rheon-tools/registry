@@ -3,7 +3,7 @@
   "id": "rheon-priority",
   "name": "rheon-priority",
   "bin_name": "rheon-priority",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Ranks file records by how recently and how often they were touched.",
   "runtime": "binary",
   "verbs": [],
@@ -16,7 +16,6 @@
   "usage": "rheon-eye . --detail | rheon-priority --since 24h",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64",
-    "macos-aarch64"
+    "windows-x86_64"
   ]
 }

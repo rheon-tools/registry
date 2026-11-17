@@ -3,7 +3,7 @@
   "id": "rheon-proc",
   "name": "rheon-proc",
   "bin_name": "rheon-proc",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "What the system is doing now: host, load, memory, disks and processes.",
   "usage": "rheon-proc process disk",
   "author": "takakix2",
