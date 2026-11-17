@@ -22,7 +22,7 @@ import shutil
 import subprocess
 import sys
 
-from flux_artifacts import FNV1A_64_VECTORS, manifest_digest, pipe_dirs
+from rheon_artifacts import FNV1A_64_VECTORS, manifest_digest, pipe_dirs
 
 # ── 出口を UTF-8 に釘付けする（理由は `check-artifacts.py` の同じ節）────────
 #

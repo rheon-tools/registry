@@ -80,7 +80,7 @@ import json
 import pathlib
 import sys
 
-from flux_artifacts import artifact_path, build_id_of, pipe_dirs
+from rheon_artifacts import artifact_path, build_id_of, pipe_dirs
 
 # ── 出口を UTF-8 に釘付けする ────────────────────────────────────────────
 #

@@ -22,7 +22,7 @@ import json
 import pathlib
 import sys
 
-from flux_artifacts import artifact_path, build_id_of, manifest_digest, pipe_dirs
+from rheon_artifacts import artifact_path, build_id_of, manifest_digest, pipe_dirs
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "pipes.json"

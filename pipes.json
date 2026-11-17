@@ -171,7 +171,7 @@
     {
       "id": "rheon-eye",
       "name": "rheon-eye",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "description": "High-speed filesystem scanner. Streams directory structure as Flux NDJSON.",
       "author": "takakix2",
       "bin_name": "rheon-eye",
@@ -186,46 +186,42 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-eye"
       ],
       "build_ids": {
-        "linux-x86_64": "a62f2e54e",
-        "windows-x86_64": "a62f2e54e",
-        "macos-aarch64": "a62f2e54e"
+        "linux-x86_64": "9d24ae99d",
+        "windows-x86_64": "9d24ae99d"
       },
-      "manifest_digest": "a988e285220d7066"
+      "manifest_digest": "0993678ec8791b28"
     },
     {
       "id": "rheon-find",
       "name": "rheon-find",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "Fuzzy filename finder. Streams matches as Flux NDJSON.",
       "bin_name": "rheon-find",
       "runtime": "binary",
       "usage": "rheon-find \"query\" /path --limit 50",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-find"
       ],
       "build_ids": {
-        "linux-x86_64": "a62f2e54e",
-        "windows-x86_64": "a62f2e54e",
-        "macos-aarch64": "a62f2e54e"
+        "linux-x86_64": "9d24ae99d",
+        "windows-x86_64": "9d24ae99d"
       },
-      "manifest_digest": "9ee8b48fb28f65a8"
+      "manifest_digest": "404e0b6c64bc3f3c"
     },
     {
       "id": "rheon-grep",
       "name": "rheon-grep",
-      "version": "4.3.1",
+      "version": "4.3.2",
       "description": "Search like rg (same engine, flags, output); Rheon records with --rheon.",
       "author": "takakix2",
       "bin_name": "rheon-grep",
@@ -240,41 +236,37 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-grep"
       ],
       "build_ids": {
-        "linux-x86_64": "a62f2e54e",
-        "windows-x86_64": "a62f2e54e",
-        "macos-aarch64": "a62f2e54e"
+        "linux-x86_64": "9d24ae99d",
+        "windows-x86_64": "9d24ae99d"
       },
-      "manifest_digest": "542387b97e00fa00"
+      "manifest_digest": "66f394ab27a10ca6"
     },
     {
       "id": "rheon-head",
       "name": "rheon-head",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "The first N Flux records -- head for records, keeping the terminator rule.",
       "bin_name": "rheon-head",
       "runtime": "binary",
       "usage": "rheon-du | rheon-sort --by disk --desc | rheon-head -n 5",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-head"
       ],
       "build_ids": {
-        "linux-x86_64": "1bfbeb78a",
-        "windows-x86_64": "1bfbeb78a",
-        "macos-aarch64": "1bfbeb78a"
+        "linux-x86_64": "9d24ae99d",
+        "windows-x86_64": "9d24ae99d"
       },
-      "manifest_digest": "2927b20172b5e791"
+      "manifest_digest": "800e727c5959f7f1"
     },
     {
       "id": "rheon-id",
