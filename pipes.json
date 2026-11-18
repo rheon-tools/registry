@@ -60,7 +60,7 @@
     {
       "id": "rheon",
       "name": "rheon",
-      "version": "0.6.0",
+      "version": "0.6.1",
       "description": "Package manager for the rheon tools.",
       "author": "takakix2",
       "bin_name": "rheon",
@@ -73,15 +73,13 @@
       ],
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "build_ids": {
-        "linux-x86_64": "1311bf3f0",
-        "windows-x86_64": "1311bf3f0",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "92683c15d",
+        "windows-x86_64": "92683c15d"
       },
-      "manifest_digest": "14176f9c70f6a7b6"
+      "manifest_digest": "07f4aab5fd17bf46"
     },
     {
       "id": "rheon-count",
@@ -225,7 +223,7 @@
     {
       "id": "rheon-grep",
       "name": "rheon-grep",
-      "version": "4.3.2",
+      "version": "4.4.0",
       "description": "Search like rg (same engine, flags, output); Rheon records with --rheon.",
       "author": "takakix2",
       "bin_name": "rheon-grep",
@@ -240,41 +238,37 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-grep"
       ],
       "build_ids": {
-        "linux-x86_64": "9d24ae99d",
-        "windows-x86_64": "9d24ae99d",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "92683c15d",
+        "windows-x86_64": "92683c15d"
       },
-      "manifest_digest": "6d3c212ec84225c5"
+      "manifest_digest": "245af2f51b574b4f"
     },
     {
       "id": "rheon-head",
       "name": "rheon-head",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "description": "The first N Rheon records -- head for records, keeping the terminator rule.",
       "bin_name": "rheon-head",
       "runtime": "binary",
       "usage": "rheon-du | rheon-sort --by disk --desc | rheon-head -n 5",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-head"
       ],
       "build_ids": {
-        "linux-x86_64": "9d24ae99d",
-        "windows-x86_64": "9d24ae99d",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "92683c15d",
+        "windows-x86_64": "92683c15d"
       },
-      "manifest_digest": "6a36b9736d87369e"
+      "manifest_digest": "9d7b997cfd6c4743"
     },
     {
       "id": "rheon-id",
@@ -481,25 +475,23 @@
     {
       "id": "rheon-sort",
       "name": "rheon-sort",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "description": "Sorts Rheon records by the value of one field -- sort -n for records.",
       "bin_name": "rheon-sort",
       "runtime": "binary",
       "usage": "rheon-du | rheon-sort --by disk --desc",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-sort"
       ],
       "build_ids": {
-        "linux-x86_64": "1311bf3f0",
-        "windows-x86_64": "1311bf3f0",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "92683c15d",
+        "windows-x86_64": "92683c15d"
       },
-      "manifest_digest": "495d099f6e3d98f3"
+      "manifest_digest": "28d3873b4a8aa398"
     },
     {
       "id": "rheon-sum",
@@ -527,25 +519,23 @@
     {
       "id": "rheon-tail",
       "name": "rheon-tail",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "description": "The last N Rheon records -- tail for records, terminator not counted.",
       "bin_name": "rheon-tail",
       "runtime": "binary",
       "usage": "journal --since 1h | rheon-tail -n 20",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-tail"
       ],
       "build_ids": {
-        "linux-x86_64": "1311bf3f0",
-        "windows-x86_64": "1311bf3f0",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "92683c15d",
+        "windows-x86_64": "92683c15d"
       },
-      "manifest_digest": "8d495d75a7591da2"
+      "manifest_digest": "f4cc708ba19a7e3f"
     },
     {
       "id": "rheon-time",
