@@ -3,7 +3,7 @@
   "id": "rheon-sort",
   "name": "rheon-sort",
   "bin_name": "rheon-sort",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Sorts Rheon records by the value of one field -- sort -n for records.",
   "usage": "rheon-du | rheon-sort --by disk --desc",
   "runtime": "binary",
@@ -24,10 +24,9 @@
       ]
     }
   ],
-  "notes": "Sorts Rheon records by the value of one field -- sort -n for records. Numbers as numbers, strings as strings; records without the field go last and are counted on stderr. Passes the records through unchanged.\n\nPrototype for #58 (2026-10-13); promoted to Rust in #78 (2026-10-14), with the Python version kept as the diff-test reference. Accumulates its input like sort. With hsh's HSH_RHEON=sig (exit not unwrapped), this is what makes `du | sort -n` composable while the records stay records.",
+  "notes": "Sorts Rheon records by the value of one field -- sort -n for records. Numbers as numbers, strings as strings; records without the field go last and are counted on stderr. Passes the records through unchanged.\n\nPrototype for #58 (2026-10-13); promoted to Rust in #78 (2026-10-14), with the Python version kept as the diff-test reference. Accumulates its input like sort, keeping only each line and the value it is sorted by (#92). Reads on up to four threads and hands the records on in input order, so the answer is the same at any number; RHEON_THREADS=N sets the number (1 reads on one thread) (#92). With hsh's HSH_RHEON=sig (exit not unwrapped), this is what makes `du | sort -n` composable while the records stay records.",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64",
-    "macos-aarch64"
+    "windows-x86_64"
   ]
 }

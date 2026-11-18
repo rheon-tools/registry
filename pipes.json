@@ -4,7 +4,7 @@
     {
       "id": "filter-json",
       "name": "filter-json",
-      "version": "0.3.3",
+      "version": "0.4.0",
       "description": "Keeps Rheon records by type or field and projects the fields you want.",
       "author": "takakix2",
       "bin_name": "filter-json",
@@ -19,15 +19,13 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "build_ids": {
-        "linux-x86_64": "1311bf3f0",
-        "windows-x86_64": "1311bf3f0",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "6986694be",
+        "windows-x86_64": "6986694be"
       },
-      "manifest_digest": "b8771eeed2c6a2f3"
+      "manifest_digest": "8ae0f60da0c5ac31"
     },
     {
       "id": "json-to-table",
@@ -86,25 +84,23 @@
     {
       "id": "rheon-count",
       "name": "rheon-count",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "description": "Counts Rheon records per value of one field -- uniq -c for records.",
       "bin_name": "rheon-count",
       "runtime": "binary",
       "usage": "rheon-grep TODO src --limit 0 | rheon-count --by path",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-count"
       ],
       "build_ids": {
-        "linux-x86_64": "1311bf3f0",
-        "windows-x86_64": "1311bf3f0",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "6986694be",
+        "windows-x86_64": "6986694be"
       },
-      "manifest_digest": "3784693d9bf0b36f"
+      "manifest_digest": "f088e5642a5b02f1"
     },
     {
       "id": "rheon-du",
@@ -481,25 +477,23 @@
     {
       "id": "rheon-sort",
       "name": "rheon-sort",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "description": "Sorts Rheon records by the value of one field -- sort -n for records.",
       "bin_name": "rheon-sort",
       "runtime": "binary",
       "usage": "rheon-du | rheon-sort --by disk --desc",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-sort"
       ],
       "build_ids": {
-        "linux-x86_64": "92683c15d",
-        "windows-x86_64": "92683c15d",
-        "macos-aarch64": "92683c15d"
+        "linux-x86_64": "6986694be",
+        "windows-x86_64": "6986694be"
       },
-      "manifest_digest": "31676c9a4f588db7"
+      "manifest_digest": "2cd5e66221dac751"
     },
     {
       "id": "rheon-sum",
