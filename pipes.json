@@ -73,13 +73,15 @@
       ],
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "92683c15d",
-        "windows-x86_64": "92683c15d"
+        "windows-x86_64": "92683c15d",
+        "macos-aarch64": "92683c15d"
       },
-      "manifest_digest": "07f4aab5fd17bf46"
+      "manifest_digest": "c7076646ad9a81a5"
     },
     {
       "id": "rheon-count",
@@ -238,16 +240,18 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-grep"
       ],
       "build_ids": {
         "linux-x86_64": "92683c15d",
-        "windows-x86_64": "92683c15d"
+        "windows-x86_64": "92683c15d",
+        "macos-aarch64": "92683c15d"
       },
-      "manifest_digest": "245af2f51b574b4f"
+      "manifest_digest": "a018bd33bf35d6b6"
     },
     {
       "id": "rheon-head",
@@ -259,16 +263,18 @@
       "usage": "rheon-du | rheon-sort --by disk --desc | rheon-head -n 5",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-head"
       ],
       "build_ids": {
         "linux-x86_64": "92683c15d",
-        "windows-x86_64": "92683c15d"
+        "windows-x86_64": "92683c15d",
+        "macos-aarch64": "92683c15d"
       },
-      "manifest_digest": "9d7b997cfd6c4743"
+      "manifest_digest": "ef0216eb7528adc2"
     },
     {
       "id": "rheon-id",
@@ -482,16 +488,18 @@
       "usage": "rheon-du | rheon-sort --by disk --desc",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-sort"
       ],
       "build_ids": {
         "linux-x86_64": "92683c15d",
-        "windows-x86_64": "92683c15d"
+        "windows-x86_64": "92683c15d",
+        "macos-aarch64": "92683c15d"
       },
-      "manifest_digest": "28d3873b4a8aa398"
+      "manifest_digest": "31676c9a4f588db7"
     },
     {
       "id": "rheon-sum",
@@ -526,16 +534,18 @@
       "usage": "journal --since 1h | rheon-tail -n 20",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-tail"
       ],
       "build_ids": {
         "linux-x86_64": "92683c15d",
-        "windows-x86_64": "92683c15d"
+        "windows-x86_64": "92683c15d",
+        "macos-aarch64": "92683c15d"
       },
-      "manifest_digest": "f4cc708ba19a7e3f"
+      "manifest_digest": "722983fa75e59546"
     },
     {
       "id": "rheon-time",
