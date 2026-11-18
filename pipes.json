@@ -19,13 +19,15 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "6986694be",
-        "windows-x86_64": "6986694be"
+        "windows-x86_64": "6986694be",
+        "macos-aarch64": "6986694be"
       },
-      "manifest_digest": "8ae0f60da0c5ac31"
+      "manifest_digest": "f418ddf0ec70d9b8"
     },
     {
       "id": "json-to-table",
@@ -91,16 +93,18 @@
       "usage": "rheon-grep TODO src --limit 0 | rheon-count --by path",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-count"
       ],
       "build_ids": {
         "linux-x86_64": "6986694be",
-        "windows-x86_64": "6986694be"
+        "windows-x86_64": "6986694be",
+        "macos-aarch64": "6986694be"
       },
-      "manifest_digest": "f088e5642a5b02f1"
+      "manifest_digest": "06218c0b5b0230f8"
     },
     {
       "id": "rheon-du",
@@ -484,16 +488,18 @@
       "usage": "rheon-du | rheon-sort --by disk --desc",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-sort"
       ],
       "build_ids": {
         "linux-x86_64": "6986694be",
-        "windows-x86_64": "6986694be"
+        "windows-x86_64": "6986694be",
+        "macos-aarch64": "6986694be"
       },
-      "manifest_digest": "2cd5e66221dac751"
+      "manifest_digest": "3ea7d20a36491598"
     },
     {
       "id": "rheon-sum",
