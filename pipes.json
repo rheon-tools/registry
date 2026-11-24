@@ -171,7 +171,7 @@
     {
       "id": "rheon-eye",
       "name": "rheon-eye",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "description": "High-speed filesystem scanner. Streams directory structure as Rheon NDJSON.",
       "author": "takakix2",
       "bin_name": "rheon-eye",
@@ -193,11 +193,11 @@
         "flux-eye"
       ],
       "build_ids": {
-        "linux-x86_64": "4456e6e4c",
-        "windows-x86_64": "4456e6e4c",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "6237e1d78",
+        "windows-x86_64": "6237e1d78",
+        "macos-aarch64": "6237e1d78"
       },
-      "manifest_digest": "2e694013c89fec90"
+      "manifest_digest": "0c7653d339c303e1"
     },
     {
       "id": "rheon-file",
@@ -578,7 +578,7 @@
     {
       "id": "rheon-time",
       "name": "rheon-time",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "description": "The current time as one Rheon record -- date for records, zone included.",
       "bin_name": "rheon-time",
       "runtime": "binary",
@@ -592,11 +592,11 @@
         "flux-time"
       ],
       "build_ids": {
-        "linux-x86_64": "1311bf3f0",
-        "windows-x86_64": "1311bf3f0",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "6237e1d78",
+        "windows-x86_64": "6237e1d78",
+        "macos-aarch64": "6237e1d78"
       },
-      "manifest_digest": "111f2fadc4ca4424"
+      "manifest_digest": "58c2c41f3c1b95b9"
     },
     {
       "id": "rheon-wc",
