@@ -35,6 +35,7 @@
   "notes": "The type of each file from its leading 8 KiB: magic bytes for the common binary formats (images, audio and video containers, archives and compression, PDF, SQLite, ELF / PE / Mach-O / wasm / Java class, fonts), else text or data by GNU file's byte classes, with the charset (us-ascii, utf-8, iso-8859-1, unknown-8bit, utf-16) and a few text subtypes (SVG, XML, HTML, JSON, NDJSON, #! scripts). An ELF shared object is told from a PIE executable by DF_1_PIE, read from its dynamic section, as GNU file does. Self-contained: no magic.mgc and no msys-2.0.dll, so it starts fast on Windows -- a stand-in for Git for Windows' file.exe through YAZI_FILE_ONE.\n\nAnswers GNU file's own calls with the same line shapes: -b, -i / --mime, --mime-type, --mime-encoding, -L / -h, -N, -0, -E, -f FILE / --files-from (FILE '-' is stdin, which is how Yazi on Windows sends its paths), and '-' for the data on stdin. One line per name, in order, errors included (cannot open `NAME' (REASON)), and exit 0 as GNU file does unless -E. --rheon writes one file-type record per name (path, mime, encoding, kind, description) and a file-stats terminator; a name that cannot be read is a record with null fields and a line on stderr, and when none can be read stdout is empty and the exit is 1. Fewer formats than GNU file: the many text subtypes it finds by content (C, Python, Ruby, troff, Makefile ...) are text/plain here, and anything unknown that is not text is application/octet-stream. The library entry (run_in) takes stdin and writers explicitly and never exits the process. Linux, macOS and Windows.",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64"
+    "windows-x86_64",
+    "macos-aarch64"
   ]
 }

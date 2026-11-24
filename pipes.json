@@ -217,13 +217,15 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "1eede7878",
-        "windows-x86_64": "1eede7878"
+        "windows-x86_64": "1eede7878",
+        "macos-aarch64": "1eede7878"
       },
-      "manifest_digest": "056d02700a302197"
+      "manifest_digest": "fc82532a8ee7230e"
     },
     {
       "id": "rheon-find",
