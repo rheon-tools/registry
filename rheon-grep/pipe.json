@@ -3,7 +3,7 @@
   "id": "rheon-grep",
   "name": "rheon-grep",
   "bin_name": "rheon-grep",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "Search like rg (same engine, flags, output); Rheon records with --rheon.",
   "usage": "rheon-grep PATTERN [PATH...]   (--rheon for records)",
   "author": "takakix2",

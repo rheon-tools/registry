@@ -253,7 +253,7 @@
     {
       "id": "rheon-grep",
       "name": "rheon-grep",
-      "version": "4.4.0",
+      "version": "4.5.0",
       "description": "Search like rg (same engine, flags, output); Rheon records with --rheon.",
       "author": "takakix2",
       "bin_name": "rheon-grep",
@@ -275,11 +275,11 @@
         "flux-grep"
       ],
       "build_ids": {
-        "linux-x86_64": "92683c15d",
-        "windows-x86_64": "92683c15d",
-        "macos-aarch64": "92683c15d"
+        "linux-x86_64": "a97776a2a",
+        "windows-x86_64": "a97776a2a",
+        "macos-aarch64": "a97776a2a"
       },
-      "manifest_digest": "a018bd33bf35d6b6"
+      "manifest_digest": "ea5f7c89bb395501"
     },
     {
       "id": "rheon-head",
