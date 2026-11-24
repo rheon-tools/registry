@@ -631,6 +631,34 @@
       "manifest_digest": "7cfd8eb60321832f"
     },
     {
+      "id": "rheon-which",
+      "name": "rheon-which",
+      "version": "0.1.0",
+      "description": "What a name runs -- which, with every match on PATH and who put it there.",
+      "author": "takakix2",
+      "bin_name": "rheon-which",
+      "runtime": "binary",
+      "usage": "rheon-which [-a] NAME...   (--rheon for records)",
+      "license": "MIT",
+      "tags": [
+        "shell",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64",
+        "macos-aarch64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "c9ce16042",
+        "windows-x86_64": "c9ce16042",
+        "macos-aarch64": "c9ce16042"
+      },
+      "manifest_digest": "16e098e2d0e94f72"
+    },
+    {
       "id": "rheon-write",
       "name": "rheon-write",
       "version": "1.2.0",

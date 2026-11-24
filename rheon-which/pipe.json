@@ -1,0 +1,41 @@
+{
+  "$schema": "https://oh-my-hsh.navii.online/schemas/pipe-v1.json",
+  "id": "rheon-which",
+  "name": "rheon-which",
+  "bin_name": "rheon-which",
+  "version": "0.1.0",
+  "description": "What a name runs -- which, with every match on PATH and who put it there.",
+  "usage": "rheon-which [-a] NAME...   (--rheon for records)",
+  "author": "takakix2",
+  "license": "MIT",
+  "runtime": "binary",
+  "side_effects": [],
+  "rheon": {
+    "flag": "--rheon",
+    "category": "source"
+  },
+  "tags": [
+    "shell",
+    "source",
+    "official"
+  ],
+  "min_hsh_version": "0.1.0",
+  "verbs": [
+    {
+      "verb": "rhwhich",
+      "template": "rheon-which --rheon {name}",
+      "args": [
+        {
+          "name": "name",
+          "type": "str"
+        }
+      ]
+    }
+  ],
+  "notes": "By default it is which: the first match on PATH for each NAME, one line per path (exit 1 when a NAME is not found, said on stderr); -a lists every match in PATH order, as GNU which -a does (a PATH entry repeated, or /bin that links to /usr/bin, gives the same file twice). With --rheon: a command:found record for every match -- name, path, rank, wins (the one that runs), dir, ext (the extension Windows matched), link_target, same_file_as (the rank of an earlier match that is the same file) and placed_by -- then a terminator; a NAME with no match is a command:missing record, and the exit is 0.\n\nplaced_by is the rheon tool that put the match on the shelf (~/.local/bin), by the same rule rheon install uses (an installed declaration holds the name, and a short name is still a copy of the tool); anything put there by hand or by another package manager is null. Unix: each PATH directory in order, a file with an execute bit, an empty entry is the current directory (POSIX). Windows: each PATH directory in order (; separated, quotes removed), the name as typed if it has an extension and then with each PATHEXT extension; the current directory is not looked at first (as PowerShell and CreateProcess; cmd does). A NAME with a path separator is checked as that path. Aliases, functions and builtins of the calling shell are not visible from another program -- ask the shell (type, command -v). The library entry (run_in) takes PATH, PATHEXT, the home and the platform rule as arguments and never exits the process. Linux, macOS and Windows.",
+  "platforms": [
+    "linux-x86_64",
+    "windows-x86_64",
+    "macos-aarch64"
+  ]
+}
