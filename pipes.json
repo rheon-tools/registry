@@ -109,7 +109,7 @@
     {
       "id": "rheon-du",
       "name": "rheon-du",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "description": "du, fast: GNU du's flags and lines; Rheon records with --rheon.",
       "author": "takakix2",
       "bin_name": "rheon-du",
@@ -131,11 +131,11 @@
         "flux-du"
       ],
       "build_ids": {
-        "linux-x86_64": "1c9ee322a",
-        "windows-x86_64": "1c9ee322a",
-        "macos-aarch64": "1c9ee322a"
+        "linux-x86_64": "b78920a68",
+        "windows-x86_64": "b78920a68",
+        "macos-aarch64": "b78920a68"
       },
-      "manifest_digest": "ff9b94e259e47924"
+      "manifest_digest": "2bf86178f1bd006f"
     },
     {
       "id": "rheon-env",
@@ -338,7 +338,7 @@
     {
       "id": "rheon-ls",
       "name": "rheon-ls",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "description": "What is in the current directory, one record per entry, nothing hidden.",
       "author": "takakix2",
       "bin_name": "rheon-ls",
@@ -360,11 +360,11 @@
         "flux-ls"
       ],
       "build_ids": {
-        "linux-x86_64": "1311bf3f0",
-        "windows-x86_64": "1311bf3f0",
-        "macos-aarch64": "4456e6e4c"
+        "linux-x86_64": "b78920a68",
+        "windows-x86_64": "b78920a68",
+        "macos-aarch64": "b78920a68"
       },
-      "manifest_digest": "4d1407ade873fa64"
+      "manifest_digest": "854280d0b142a3d3"
     },
     {
       "id": "rheon-priority",
