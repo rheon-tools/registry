@@ -200,6 +200,32 @@
       "manifest_digest": "2e694013c89fec90"
     },
     {
+      "id": "rheon-file",
+      "name": "rheon-file",
+      "version": "0.1.0",
+      "description": "What kind of file each one is -- file, fast and without magic.mgc.",
+      "author": "takakix2",
+      "bin_name": "rheon-file",
+      "runtime": "binary",
+      "usage": "rheon-file [OPTION]... FILE...   (--rheon for records; -f - reads names from stdin)",
+      "license": "MIT",
+      "tags": [
+        "files",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1eede7878",
+        "windows-x86_64": "1eede7878"
+      },
+      "manifest_digest": "056d02700a302197"
+    },
+    {
       "id": "rheon-find",
       "name": "rheon-find",
       "version": "1.1.2",
